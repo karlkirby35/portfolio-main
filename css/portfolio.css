@@ -286,6 +286,268 @@
   transform: translateY(0);
 }
 
+.unreal-page {
+  padding: 0 20px 70px;
+}
+
+.unreal-hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 40px 20px;
+}
+
+.unreal-hero h1 {
+  margin-bottom: 12px;
+}
+
+.unreal-hero p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.unreal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto 40px;
+}
+
+.unreal-info-card {
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.unreal-info-card h3 {
+  margin-bottom: 8px;
+}
+
+.unreal-info-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.unreal-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.unreal-shot {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.unreal-shot img {
+  width: 320px;
+  max-width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  border: 3px solid #000;
+  object-fit: cover;
+}
+
+.unreal-shot-copy {
+  flex: 1;
+  min-width: 240px;
+}
+
+.unreal-shot-copy h3 {
+  margin-top: 0;
+}
+
+.unreal-shot-copy p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.unreal-cta {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #f0f0f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.unreal-cta p {
+  color: #555;
+}
+
+.unreal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.unreal-links a {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #616161;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.unreal-links a:hover {
+  background: #333;
+}
+
+@media (max-width: 720px) {
+  .unreal-shot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .unreal-shot img {
+    width: 100%;
+    height: 240px;
+  }
+}
+
+.project-carousel {
+  position: relative;
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding: 0 48px;
+}
+
+.carousel-window {
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background: #f8f8f8;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.carousel-slide-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 14px 16px 6px;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin: 0 16px 16px;
+  color: #555;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.04);
+}
+
+.carousel-btn.left {
+  left: 6px;
+}
+
+.carousel-btn.right {
+  right: 6px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot.active {
+  background: #333;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .project-carousel {
+    padding: 0 14px;
+  }
+
+  .project-card img {
+    height: 300px;
+  }
+
+  .carousel-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
+
 
 
 
