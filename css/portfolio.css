@@ -1,0 +1,296 @@
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
+  }
+  
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;   
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .intro h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .projects {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .project {
+    background: #f8f8f8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 400px;
+    transition: transform 0.2s;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .project h3 {
+    margin: 15px 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .project p {
+    margin: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .project a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+
+  .intro1 {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .screenShots {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  
+  .screenShots img {
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 4px solid #000000;
+  }
+
+  .shot {
+  background: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+  height: 100%;
+}
+
+.shot:hover {
+  transform: translateY(-5px);
+}
+
+.shot img {
+  width: 180%;
+  height: auto;   
+  object-fit: cover; 
+  border-radius: 8px;
+  border: 3px solid #000;
+}
+
+
+.shot h3 {
+  margin: 12px 0 5px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.shot p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0 10px 10px;
+}
+
+.implementation {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  
+}
+
+.shotText {
+  text-align: right;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 0px 20px;
+}
+
+.screenShotsFb {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.shotFb {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.shotFb img {
+  width: 45%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #000;
+  object-fit: cover;
+}
+
+.shotText {
+  flex: 1;
+  text-align: left;
+}
+
+.shotText h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.shotText p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 18px;
+  background-color: #616161;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+.intro2 {
+  text-align: center;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 50px 25px;
+  
+}
+
+.intro2 h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.intro2 p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.screenShotsHealth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px 60px;
+}
+
+.screenShotH1, .screenShotH2 {
+  background: #e0e0e0; 
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column; /* ✅ this stacks text below the image */
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+
+.screenShotH1:hover,
+.screenShotH2:hover {
+  transform: translateY(-5px);
+}
+
+.screenShotsHealth img {
+  width: 100%;
+  max-width: 850px; 
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid #fff; 
+  object-fit: contain;
+}
+
+.screenShotH1 {
+  text-align: center;
+}
+.screenShotH2 {
+  text-align: center;
+}
+
+.how-it-works {
+  text-align: center;
+}
+
+.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.js-ready .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
